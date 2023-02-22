@@ -1,0 +1,30 @@
+[
+    {
+      "name": "Harry Potter",
+      "year": 2010,
+      "reviews": [
+        {
+          "email": "john.doe@gmail.com",
+          "note": "Great book to read",
+          "star": 5
+        },
+        {
+          "email": "jane.doe@gmail.com",
+          "note": "Mediocre book to read",
+          "star": 3
+        }
+      ]
+    },
+    {
+      "name": "The Hunger Games",
+      "year": 2012,
+      "reviews": [
+        {
+          "email": "john.doe@gmail.com",
+          "note": "Amazing book to read",
+          "star": 4
+        }
+      ]
+    }
+  ]
+  

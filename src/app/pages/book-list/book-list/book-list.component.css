@@ -1,0 +1,57 @@
+.container {
+    /* border: 1px solid; */
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    max-width: 90px;
+    width: 90px;
+    cursor: pointer;
+    height: 120px;
+    max-height: 120px;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+    /* width: 400px; */
+    overflow: auto;
+    height: 280px;
+    justify-content: space-between;
+}
+.box::-webkit-scrollbar {
+    /* Untuk browser Chrome, Safari, dan Opera */
+    display: none;
+}
+
+.header-text {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.year {
+    margin-top: 20px;
+    /* border: 1px solid; */
+}
+
+.title,
+.year {
+    text-align: center;
+}
+.container-list {
+    width: 50%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+}

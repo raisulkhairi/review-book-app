@@ -1,0 +1,59 @@
+<app-book-list (idTaken)="checkData($event)"></app-book-list>
+<div class="container">
+  <div class="containerr">
+    <div class="container-review">
+      <div class="review">
+        <div class="header-text">{{ headerText }}</div>
+        <div class="box-review" *ngFor="let item of reviews">
+          <div class="list-review">
+            <div class="item">
+              <div class="email">{{ item.email }}</div>
+              <div class="note">{{ item.note }}</div>
+              <div class="star">{{ item.star }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box-information" *ngIf="hasInformation">
+        <div class="information">Select Book For View Comments</div>
+      </div>
+    </div>
+    <div class="container-input-review">
+      <div class="header-text">New review</div>
+      <div class="box-input">
+        <input
+          [(ngModel)]="reviewForm.email"
+          type="email"
+          placeholder="email"
+          [disabled]="hasInformation"
+          #inputEmail
+        />
+        <br />
+        <input
+          [(ngModel)]="reviewForm.note"
+          type="text"
+          placeholder="note"
+          [disabled]="hasInformation"
+          #inputNote
+        />
+        <br />
+        <input
+          (keydown)="validateInput($event)"
+          (keypress)="validateInput($event)"
+          [(ngModel)]="reviewForm.star"
+          type="text"
+          placeholder="star"
+          [disabled]="hasInformation"
+          #inputStar
+        /><br />
+        <button
+          (click)="addReview()"
+          [disabled]="!reviewForm.star || !reviewForm.email || !reviewForm.note"
+          class="button-save"
+        >
+          save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

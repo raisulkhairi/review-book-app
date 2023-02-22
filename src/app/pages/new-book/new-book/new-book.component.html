@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="container-input">
+    <div class="input">
+      <div class="header-text">New Book</div>
+      <div class="box-input">
+        <div class="input-name">
+          <div class="title">name:</div>
+          <div class="input">
+            <input [(ngModel)]="bookForm.name" type="text" />
+          </div>
+        </div>
+        <div class="input-year">
+          <div class="title">year:</div>
+          <div class="input">
+            <input type="text" [(ngModel)]="bookForm.year" />
+          </div>
+        </div>
+        <button (click)="create()">Add</button>
+      </div>
+    </div>
+  </div>
+</div>

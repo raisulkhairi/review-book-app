@@ -1,0 +1,77 @@
+.header-text {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.container {
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerr {
+    width: 50%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.item {
+    margin-bottom: 10px;
+    /* padding: 5px 10px; */
+}
+
+.container-input-review {
+    width: 50%;
+}
+
+.container-review {
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    width: 50%;
+}
+
+input[type="text"],
+input[type="email"] {
+    border: 1px solid grey;
+    margin: 5px 0;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+button.button-save {
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* .box-review {
+    padding: 5px 10px;
+} */
+
+:disabled {
+    cursor: no-drop;
+    color: rgb(165 165 165);
+    border: 1px solid grey;
+}
+
+.note {
+    font-weight: 100;
+}
+
+.email {
+    font-weight: 600;
+}
+
+/* input.ng-untouched.ng-pristine{
+    border: 1px solid grey;
+    width: 199px;
+    padding: 5px;
+}
+input.ng-untouched.ng-pristine.ng-valid {
+    border: 1px solid grey;
+    width: 199px;
+    padding: 5px;
+} */

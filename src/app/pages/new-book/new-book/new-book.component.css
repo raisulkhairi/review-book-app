@@ -1,0 +1,38 @@
+.container {
+    /* border: 1px solid; */
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-text {
+    font-size: 25px;
+    margin: 10px 0;
+}
+.box-input {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+}
+.input-name,.input-year {
+    display: flex;
+}
+input[type="text"] {
+    border: 1px solid grey;
+}
+.input-name,.input-year {
+    margin-bottom: 10px;
+    /* border: 1px solid; */
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    border: 1px solid;
+    padding: 5px 20px;
+    border-radius: 3px;
+    margin-left: 68px;
+}
+.container-input {
+    width: 50%;
+}
